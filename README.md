@@ -1,6 +1,6 @@
-# Matlab Project for Anomaly Detection, Kernel Regression, and Stochastic Text Generation
+# Matlab Project for Anomaly Detection, Kernel Regression, Polynomial Interpolation, Numerical Music, Recommendation Systems and Stochastic Text Generation
 
-This repository contains Matlab scripts and functions for three main tasks: outlier detection, kernel regression, and a stochastic text generator. Each folder includes multiple Matlab files implementing specific functions as described below.
+This repository contains Matlab scripts and functions for six main tasks.
 
 ## Project Structure
 
@@ -12,6 +12,15 @@ This repository contains Matlab scripts and functions for three main tasks: outl
 
 - **stochastic_text_generator**  
   This folder contains functions for generating text using a stochastic matrix approach, identifying distinct words and sequences, and building a sparse stochastic matrix.
+
+- **polynomial_interpolation_and_splines**  
+  This folder contains Matlab functions for tasks related to polynomial interpolation (Vandermonde matrix) and cubic splines, with utilities for parsing and plotting data.
+
+- **numerical_music**  
+  This folder contains Matlab scripts for generating sounds, applying filters (e.g., low-pass), adding reverb, and creating music-related visualizations like spectrograms.
+
+- **recommendations**  
+  This folder includes Matlab functions for building recommendation systems using techniques such as cosine similarity.
 
 ---
 
@@ -101,6 +110,83 @@ This repository contains Matlab scripts and functions for three main tasks: outl
   Creates a sparse stochastic matrix representing the probability of certain words appearing after a sequence.
 
 ---
+
+## Folder: `polynomial_interpolation_and_splines`
+
+### Functions:
+
+- **P_spline.m**  
+  Computes polynomial splines with C2 continuity for data interpolation.
+
+- **P_vandermonde.m**  
+  Constructs a Vandermonde matrix for polynomial interpolation.
+
+- **parse_data.m**  
+  Parses input data into a form suitable for spline and Vandermonde interpolation.
+
+- **plot_spline.m**  
+  Plots the result of spline interpolation.
+
+- **plot_vandermonde.m**  
+  Plots the polynomial obtained from Vandermonde interpolation.
+
+- **spline_c2.m**  
+  Implements a cubic spline with C2 continuity.
+
+- **vandermonde.m**  
+  Constructs a Vandermonde matrix for polynomial interpolation based on a set of points.
+
+---
+
+## Folder: `numerical_music`
+
+### Functions:
+
+- **apply_reverb.m**  
+  Adds reverb effects to a sound signal to simulate an acoustic environment.
+
+- **create_instruments.m**  
+  Generates synthetic musical instruments based on waveforms.
+
+- **create_sound.m**  
+  Produces sound signals using a specified waveform, frequency, and duration.
+
+- **low_pass.m**  
+  Implements a low-pass filter to remove high-frequency components from a sound signal.
+
+- **oscillator.m**  
+  Generates different waveforms (e.g., sine, square, triangle) for sound synthesis.
+
+- **parse_pattern.m**  
+  Parses musical patterns and sequences for sound generation.
+
+- **plot_spectrogram.m**  
+  Visualizes the spectrogram of a sound signal, showing frequency content over time.
+
+- **spectrogram.m**  
+  Computes the spectrogram of a sound signal using the Short-Time Fourier Transform (STFT).
+
+- **stereo_to_mono.m**  
+  Converts stereo audio signals to mono by averaging the channels.
+
+---
+
+## Folder: `recommendations`
+
+### Functions:
+
+- **cosine_similarity.m**  
+  Calculates the cosine similarity between two vectors, commonly used in recommendation systems to measure similarity between users or items.
+
+- **preprocess.m**  
+  Preprocesses data (e.g., normalizing or formatting) for use in the recommendation system.
+
+- **read_mat.m**  
+  Reads and loads a `.mat` file containing user-item matrices or other relevant data.
+
+- **recommendations.m**  
+  Generates recommendations for a user based on cosine similarity with other users or items in the dataset.
+
 
 ## Requirements
 

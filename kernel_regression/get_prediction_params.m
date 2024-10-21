@@ -1,6 +1,5 @@
 function [a] = get_prediction_params (K, y, lambda)
-  # TO DO: folosind metode neiterative, implementati logica
-  # pentru a obtine vectorul coloana a, asa cum este descris in enuntul temei
+  # iterative method
   m = size(K, 1);
   A = lambda * eye(m) + K;
   L = cholesky(A);

@@ -1,4 +1,4 @@
-## DO NOT MODIFY!
+
 function retval = prob_choose (weights, wset)
     % Normalize the weight vector
     probabilities = weights / sum(weights);

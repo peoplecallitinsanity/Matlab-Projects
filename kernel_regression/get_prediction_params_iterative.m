@@ -1,6 +1,5 @@
 function [a] = get_prediction_params (K, y, lambda)
-  # TO DO: folosind metode iterative, implementati logica
-  # pentru a obtine vectorul coloana a, asa cum este descris in enuntul temei
+  # metode iterative
   m = size(K, 1);
   A = lambda * eye(m) + K;
   b = y;

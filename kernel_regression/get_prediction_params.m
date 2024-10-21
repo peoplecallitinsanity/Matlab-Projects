@@ -1,5 +1,4 @@
 function [a] = get_prediction_params (K, y, lambda)
-  # iterative method
   m = size(K, 1);
   A = lambda * eye(m) + K;
   L = cholesky(A);

@@ -1,5 +1,4 @@
 function [x] = conjugate_gradient (A, b, x0, tol, max_iter)
-  # Implementati algoritmul pentru metoda gradientului conjugat
   % residual - how much the solution differs from the target solution
   residual = b - A * x0;
   % vector - initial search direction for the conjugate gradient algorithm
